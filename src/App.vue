@@ -1,31 +1,49 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <the-navbar class="nav" />
+    <router-view class="content" />
+    <the-footer class="footer" />
   </div>
 </template>
 
-<style>
+<script>
+import TheNavbar from "@/components/TheNavbar.vue";
+import TheFooter from "@/components/TheFooter.vue";
+
+export default {
+  components: {
+    TheNavbar,
+    TheFooter
+  }
+}
+</script>
+
+<style lang="scss">
+html, body {
+    margin: 0;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  // text-align: center;
+  color: #ffffff;
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.nav {
+  top: 0;
+}
+.content {
+  margin: auto;
+  width: 80%;
+  min-height: 100%;
+}
+.footer {
+  display: flex;
+  justify-self: flex-end;
 }
 </style>
