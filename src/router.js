@@ -39,11 +39,6 @@ export default new Router({
       component: Trondelan
     },
     {
-      path: "/trondelan",
-      name: "trondelan",
-      component: Trondelan
-    },
-    {
       path: "/gameNights",
       name: "gameNights",
       component: GameNights
