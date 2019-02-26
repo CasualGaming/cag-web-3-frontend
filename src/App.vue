@@ -22,17 +22,23 @@ export default {
 html, body {
     margin: 0;
 }
+
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // text-align: center;
   color: #ffffff;
-  background-color: #2b2b2b;
+  background-color: #2a2f4a;
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
+
 }
+
+  
 
 .nav {
   top: 0;
@@ -45,5 +51,8 @@ html, body {
 .footer {
   display: flex;
   justify-self: flex-end;
+  background-color: #242943;
 }
+
+
 </style>
