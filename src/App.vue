@@ -35,17 +35,13 @@ html, body {
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
-
 }
-
-  
-
 .nav {
   top: 0;
 }
 .content {
   margin: auto;
-  width: 80%;
+  width: 100%;
   min-height: 100%;
 }
 .footer {
@@ -53,6 +49,4 @@ html, body {
   justify-self: flex-end;
   background-color: #242943;
 }
-
-
 </style>
