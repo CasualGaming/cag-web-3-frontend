@@ -44,9 +44,9 @@ html, body {
   width: 100%;
   min-height: 100%;
 }
-.footer {
-  display: flex;
-  justify-self: flex-end;
-  background-color: #242943;
-}
+// .footer {
+//   display: flex;
+//   justify-self: flex-end;
+//   background-color: #242943;
+// }
 </style>
